@@ -1,0 +1,13 @@
+.btn {
+  &-default-size {
+    width: 218px;
+    height: 40px;
+  }
+  &-datepicker {
+    width: 200px;
+    border: 1px solid #4399f4;
+    color: #4399f4 !important;
+    font-weight: 700;
+    box-shadow: none !important;
+  }
+}

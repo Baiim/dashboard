@@ -1,0 +1,112 @@
+.card {
+  border: 0;
+  border-radius: 20px;
+  &-status {
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    width: fit-content;
+    &.success {
+      color: #07b480;
+      background-color: #e4f5f0;
+    }
+    &.primary {
+      color: $primary;
+      background-color: #ebf2fe;
+    }
+    &.danger {
+      color: #ea4335;
+      background-color: #fdeceb;
+    }
+    &.warning {
+      color: #ffad00;
+      background-color: #fcf5e6;
+    }
+    &.purple {
+      color: #8854d0;
+      background-color: #f3eefa;
+    }
+  }
+  &-alert {
+    width: fit-content;
+    padding: 0.4rem 0.8rem;
+    background-color: #fdf0f1;
+    border-radius: 24px;
+    color: #ed6471;
+  }
+  &-faq {
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    width: fit-content;
+    &.success {
+      color: #2fca70;
+    }
+    &.primary {
+      color: $primary;
+    }
+    &.danger {
+      color: #ff4344;
+    }
+    &.warning {
+      color: #ffad00;
+    }
+  }
+  &-tabs {
+    display: block;
+    border-bottom: 0;
+    .nav-item {
+      margin: 1rem 0;
+      .nav-link {
+        padding: 0.6rem 1.5rem;
+        background-color: $white;
+        border-radius: 20px;
+        border-color: transparent !important;
+        color: $black;
+        font-weight: 700;
+        cursor: pointer;
+        &.active {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.card-ringkasan {
+  width: 100%;
+  border-radius: 8px;
+  margin: 0 16px;
+  // padding: 16px 24px;
+
+  .card-header {
+    border-radius: 8px 8px 0px 0px;
+    &.pengguna {
+      background: linear-gradient(
+        90deg,
+        rgba(69, 84, 165, 0.8) 0%,
+        rgba(148, 97, 218, 0.8) 100%
+      );
+    }
+    &.transaksi {
+      background: linear-gradient(
+        90deg,
+        rgba(148, 97, 218, 0.8) 0%,
+        rgba(50, 122, 249, 0.8) 100%
+      );
+    }
+    &.penarikan {
+      background: linear-gradient(
+        90deg,
+        rgba(50, 122, 249, 0.8) 0%,
+        rgba(16, 210, 152, 0.8) 100%
+      );
+    }
+  }
+}
+
+.custom-dangerous {
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+}

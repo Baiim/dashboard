@@ -1,0 +1,157 @@
+.form-group {
+  margin-bottom: 1.5rem;
+  label {
+    color: $gray-600;
+    font-weight: 600;
+  }
+  .form-control,
+  .select__control {
+    border-radius: 4px;
+    box-shadow: none;
+    color: $gray-700;
+    background-color: $white;
+    border: 1px solid $gray-500;
+    height: 2.5rem;
+
+    &.focus-error {
+      border-color: #ff0000;
+    }
+  }
+  .select__single-value {
+    color: $black;
+  }
+  .form-error {
+    color: #ff0000;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+  }
+}
+.input-group {
+  background-color: $white;
+  border: 1px solid $gray-500;
+  border-radius: 15px;
+  padding: 0;
+
+  &.input-search {
+    border: 0;
+    border-radius: 100px;
+    width: 450px;
+    padding: 0;
+
+    .form-control {
+      color: $black;
+    }
+  }
+  &.focus-error {
+    border-color: #ff0000;
+  }
+  .input-group-text {
+    background-color: transparent;
+    border: 0;
+  }
+  .form-control {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .input-group-prepend {
+    align-items: center;
+    span {
+      color: $gray-500 !important;
+    }
+  }
+  .input-group-append {
+    align-items: center;
+    span {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.form-control {
+  &::placeholder {
+    color: #8c8c8c !important;
+  }
+  .input-group-user {
+    background-color: #3f3838;
+    border: 1px solid #3f3838;
+    border-radius: 8px;
+    padding: 0.25rem 0.5rem;
+    &.input-search {
+      border: 0;
+      border-radius: 100px;
+      width: 450px;
+      padding: 0;
+    }
+    &.focus-error {
+      border-color: #ff0000;
+    }
+    .input-group-text {
+      background-color: transparent;
+      border: 0;
+    }
+    .form-control {
+      border: none;
+      background-color: #3f3838;
+      box-shadow: none;
+    }
+  }
+}
+
+.image-form {
+  position: relative;
+  width: 100%;
+  background: #3f3838;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: #3f3838 !important;
+  background-image: none !important;
+  color: -internal-light-dark(black, white) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: #3f3838 !important;
+  background-image: none !important;
+  color: -internal-light-dark(black, white) !important;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  display: block;
+  width: 100%;
+  border: none;
+}
+.react-datepicker__input-container input:focus {
+  outline: none;
+}
+
+.autocomplete-wrapper .dropdown {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  max-height: 280px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #0f67ff;
+  border-top: none;
+  z-index: 500;
+  position: fixed;
+}

@@ -1,0 +1,30 @@
+.react-bootstrap-table-pagination-total {
+  color: #828282;
+  font-size: 0.8rem;
+}
+.pagination {
+  margin-bottom: 0;
+  .page-item {
+    .page-link {
+      background-color: transparent;
+      border: 0;
+      color: $yellow;
+      padding: 0.25rem 0.7rem;
+      margin: 0 0.25rem;
+    }
+    &.active {
+      .page-link {
+        z-index: 0 !important;
+        background-color: $yellow;
+        color: $white;
+        border-radius: 8px;
+      }
+    }
+    &.disabled {
+      .page-link {
+        background-color: transparent;
+        color: #888888;
+      }
+    }
+  }
+}
